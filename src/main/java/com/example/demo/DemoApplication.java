@@ -16,12 +16,12 @@ public class DemoApplication {
     RmiProxyFactoryBean rmiProxy(){
         RmiProxyFactoryBean bean = new RmiProxyFactoryBean();
         bean.setServiceInterface(ClientRMI.class);
-        bean.setServiceUrl("rmi://localhost:1199/CabBookingService");
+        bean.setServiceUrl("rmi://localhost:1099/CabBookingService");
 
         return bean;
     }
 
-    public static void main(String[] args) throws RemoteException {
+    public static void main(String[] args) {
         //Registry registry = LocateRegistry.getRegistry("localhost");
         //Registry registra = LocateRegistry.getRegistry();
 
